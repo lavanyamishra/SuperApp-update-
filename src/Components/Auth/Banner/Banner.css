@@ -1,0 +1,54 @@
+.banner {
+  width: 50vw;
+  height: 100vh;
+  /* border: 1px solid red; */
+}
+
+.banner_div {
+  width: 50vw;
+  height: 100vh;
+  /* background-image: image("/images/bannerImg.png"); */
+  background-image: url("/images/bannerImg.png");
+  background-size: cover;
+  position: relative;
+}
+
+.login_content {
+  top: 3rem;
+  left: 3rem;
+  position: absolute;
+  display: flex;
+  color: #fff;
+}
+
+.banner_content {
+  position: absolute;
+  bottom: 3vh;
+  left: 2vw;
+  color: white;
+  font-size: 35px;
+  font-weight: 900;
+  max-width: 50vw;
+}
+
+.login_btn {
+  margin-left: 2rem;
+  background: #72db73;
+  padding: 0.3rem 1.3rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.5rem;
+}
+
+/* Responsive Design css  */
+
+@media screen and (max-width: 430px) {
+
+  .banner,
+  .banner_div {
+    width: 100vw;
+    height: 35vh;
+  }
+}

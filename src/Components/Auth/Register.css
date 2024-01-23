@@ -1,0 +1,107 @@
+.main {
+  display: flex;
+}
+.register {
+  width: 50vw;
+  height: 100vh;
+  background: #000000;
+  color: #fff;
+  gap: 0.5rem;
+}
+.register,
+.form_header,
+.form {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_header {
+  height: 20vh;
+  gap: 1rem;
+}
+.form_header h1 {
+  font-family: "Single Day", cursive;
+  color: #72db73;
+}
+.form_header p {
+  word-spacing: 0.7rem;
+}
+.form_section {
+  height: 80vh;
+  width: 30vw;
+}
+.form {
+  display: flex;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+}
+.input_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form_input {
+  background: #292929;
+  padding: 0.7rem;
+  width: 90%;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.input_div,
+.form_section span {
+  color: red;
+}
+.checkbox {
+  /* font-size: 0.7rem; */
+  width: 1rem;
+  flex-direction: row;
+  justify-content: center;
+}
+.checkbox pre {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+.register_btn {
+  width: 90%;
+  border-radius: 1rem;
+  background: #72db73;
+  padding: 0.6rem;
+  border: none;
+  outline: none;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+}
+.form p {
+  gap: 0.2rem;
+  color: #7c7c7c;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+.form p span {
+  cursor: pointer;
+  font-weight: bold;
+  color: #72db73;
+}
+
+/* responcive css */
+
+@media screen and (max-width: 430px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .register {
+    width: 100vw;
+    height: 65vh;
+  }
+  .form_header {
+    height: 15vh;
+  }
+  .form_section {
+    height: 50vh;
+    width: 85vw;
+  }
+}

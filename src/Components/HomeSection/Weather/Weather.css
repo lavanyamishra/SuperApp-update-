@@ -1,0 +1,75 @@
+.weather {
+  width: 33vw;
+  height: 38%;
+  margin-top: 1rem;
+  color: #fff;
+  border-radius: 1rem;
+}
+.weather_header {
+  display: flex;
+  height: 25%;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  background: #ff4ade;
+  border-radius: 1rem 1rem 0 0;
+}
+.weather_info {
+  height: 75%;
+  background: #101744;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.condition,
+.temp,
+.wind {
+  width: 32%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.condition {
+  border-right: 1px solid #fff;
+  font-size: 1.5rem;
+}
+.condition img {
+  width: 3rem;
+  height: 3rem;
+}
+.temp {
+  border-right: 1px solid #fff;
+}
+.temp h1 {
+  font-size: 1.7rem;
+}
+.temp_detail {
+  display: flex;
+}
+.temp span {
+  margin-right: 0.7rem;
+}
+
+.air,
+.humidity {
+  display: flex;
+}
+.wind img {
+  margin-right: 0.5rem;
+  height: 1.5rem;
+  width: 2rem;
+}
+.humidity {
+  margin-top: 1rem;
+}
+
+/* Responcive Design CSS  */
+
+@media screen and (max-width: 430px) {
+  .weather {
+    width: 96vw;
+  }
+}

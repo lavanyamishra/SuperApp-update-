@@ -1,0 +1,71 @@
+.userinfo {
+  width: 33vw;
+  height: 57%;
+  background: #3423ce;
+  border-radius: 1rem;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+.image_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16vw;
+}
+.image_section img {
+  height: 30vh;
+}
+.details_section {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 24vw;
+  color: #fff;
+}
+
+.user_detail {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  gap: 0.5rem;
+}
+.selected_categorie {
+  display: flex;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+.selected_genere {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 30vw;
+}
+.selected_genere p {
+  background: #9f94ff;
+  padding: 0.3rem 1.4rem;
+  border-radius: 1.5rem;
+}
+
+/* Responcive Design CSS  */
+
+@media screen and (max-width: 430px) {
+  .userinfo {
+    width: 96vw;
+  }
+  .image_section {
+    width: 30vw;
+  }
+  .details_section {
+    width: 65vw;
+    margin-left: 1rem;
+  }
+  .user_detail {
+    letter-spacing: 0.1rem;
+  }
+  .selected_genere {
+    max-width: 60vw;
+    margin-top: 1rem;
+  }
+}

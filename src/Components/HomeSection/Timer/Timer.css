@@ -1,0 +1,110 @@
+.timer_main {
+  width: 68vw;
+  height: 95%;
+  margin-left: 2.7rem;
+  background: #1e2343;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timer {
+  width: 40%;
+  height: 100%;
+}
+.timer_container {
+  margin: 0.5rem auto;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background: #191e39;
+  box-shadow: -3px -7px 16px rgba(95, 88, 88, 0.23),
+    inset 0px 6px 26px rgba(0, 0, 0, 0.61);
+  display: grid;
+  place-items: center;
+}
+.timer_container p {
+  color: white;
+}
+.outer_cirle {
+  width: 9.8rem;
+  height: 9.8rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.inner_circle {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  background: #191e39;
+  display: grid;
+  place-items: center;
+}
+.clock_container {
+  color: white;
+}
+.clock_container p {
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+.set_timer {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  color: #949494;
+}
+.time p {
+  font-size: 1.3rem;
+}
+.timer_number {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.increse_btn,
+.decrese_btn {
+  padding: 0.5rem;
+  display: flex;
+  background: transparent;
+  flex-direction: row;
+  gap: 6rem;
+}
+.disable {
+  pointer-events: none;
+}
+.decrese_btn,
+.increse_btn img {
+  cursor: pointer;
+}
+.start_btn {
+  margin-top: 0.5rem;
+  cursor: pointer;
+  background: #ff6a6a;
+  color: #fff;
+  padding: 0.4rem 8rem;
+  border-radius: 1.4rem;
+  border: none;
+  outline: none;
+}
+
+/* Responcive Design CSS  */
+
+@media screen and (max-width: 430px) {
+  .timer_main {
+    width: 96vw;
+    height: 42vh;
+    margin-left: 0;
+    flex-direction: column;
+    border: 1px solid rgb(198, 198, 198);
+  }
+}
